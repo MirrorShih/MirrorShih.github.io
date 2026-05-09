@@ -37,15 +37,6 @@
         <priority>0.6</priority>
     </url>
     
-    <url>
-        <loc>https://mirrorshih.github.io/post/%E9%97%9C%E6%96%BC%E6%88%91%E5%AD%B8%E7%BF%92%E8%B3%87%E5%AE%89%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B</loc>
-        
-        <lastmod>2025-04-19</lastmod>
-        
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
 
     <url>
         <loc>https://mirrorshih.github.io/</loc>
@@ -71,13 +62,6 @@
     
     <url>
         <loc>https://mirrorshih.github.io/tags/search?slug=OpenGL</loc>
-        <lastmod>2026-05-09</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-    
-    <url>
-        <loc>https://mirrorshih.github.io/tags/search?slug=Security</loc>
         <lastmod>2026-05-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
