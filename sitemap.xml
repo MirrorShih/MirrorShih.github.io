@@ -63,20 +63,6 @@
     </url>
     
     <url>
-        <loc>https://mirrorshih.github.io/tags/search?slug=Computer-Graphics</loc>
-        <lastmod>2026-05-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-    
-    <url>
-        <loc>https://mirrorshih.github.io/tags/search?slug=OpenGL</loc>
-        <lastmod>2026-05-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-    
-    <url>
         <loc>https://mirrorshih.github.io/tags/search?slug=AI</loc>
         <lastmod>2026-05-20</lastmod>
         <changefreq>weekly</changefreq>
@@ -99,6 +85,20 @@
     
     <url>
         <loc>https://mirrorshih.github.io/tags/search?slug=LLM</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+    
+    <url>
+        <loc>https://mirrorshih.github.io/tags/search?slug=Computer-Graphics</loc>
+        <lastmod>2026-05-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+    
+    <url>
+        <loc>https://mirrorshih.github.io/tags/search?slug=OpenGL</loc>
         <lastmod>2026-05-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
