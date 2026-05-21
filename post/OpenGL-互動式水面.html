@@ -6,14 +6,18 @@
 <meta property="og:site_name" content="MirrorShih.github.io">
 <meta property="og:description" content="前言會想寫這篇文章其實有一個契機，我在讀WebGL Water 的source code時，其中有一段程式碼中提到了 ping-pong rendering，不過在我自己搜尋資料時卻發現相關的技術幾乎沒有人對它進行比較詳細的解釋，在跟朋友抱怨這件事後，他說：「既然沒有人寫那你就可以寫一篇阿。」於是這篇文章就這樣誕生了。雖然說是OpenGL互動式水面，但這篇文章不會將重點放在實作細節上，會有很大一部">
 <meta property="og:locale">
-<meta property="og:image" content="https://mirrorshih.github.io/post/OpenGL-互動式水面/cover.png">
+<meta property="og:image" content="https://mirrorshih.github.io/post/OpenGL-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%B0%B4%E9%9D%A2/water_gray.png">
+<meta property="og:image" content="https://mirrorshih.github.io/post/OpenGL-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%B0%B4%E9%9D%A2/water_gray_example.png">
+<meta property="og:image" content="https://mirrorshih.github.io/post/OpenGL-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%B0%B4%E9%9D%A2/water_pick.png">
+<meta property="og:image" content="https://mirrorshih.github.io/post/OpenGL-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%B0%B4%E9%9D%A2/ping_pong.png">
+<meta property="og:image" content="https://mirrorshih.github.io/post/OpenGL-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%B0%B4%E9%9D%A2/cover.png">
 <meta property="article:published_time" content="2022-02-06T08:48:18.000Z">
 <meta property="article:modified_time" content="2026-05-20T09:31:23.646Z">
 <meta property="article:author" content="Mirror Shih">
 <meta property="article:tag" content="Computer Graphics">
 <meta property="article:tag" content="OpenGL">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://mirrorshih.github.io/post/OpenGL-互動式水面/cover.png">
+<meta name="twitter:image" content="https://mirrorshih.github.io/post/OpenGL-%E4%BA%92%E5%8B%95%E5%BC%8F%E6%B0%B4%E9%9D%A2/water_gray.png">
   <title>OpenGL 互動式水面 | MirrorShih.github.io</title>
 <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><script type="module" crossorigin src="/static/js/6d255a64.js"></script><link rel="stylesheet" href="/static/css/c2a1d560.css"><!-- hexo injector head_end start --><script rel="prefetch" async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script rel="preload" src="https://unpkg.com/blueimp-md5@^2.19.0/js/md5.min.js"></script><script rel="preload" src="https://unpkg.com/lodash@^4.17.21/lodash.min.js"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik"/><script async src="https://www.googletagmanager.com/gtag/js?id=G-ECJZ37SN7Q"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-ECJZ37SN7Q');</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2192502608884495" crossorigin="anonymous"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.1"><style>mjx-container[jax="SVG"] {
   direction: ltr;
